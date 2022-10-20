@@ -26,14 +26,17 @@
      color: var(--brand-color-main);
  }
 
+ .container {
+     max-width: 1200px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0 15px;
+    align-items: flex-start;
+ }
+
+
  /* header */
 
-.container{
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin: auto ;
-}
 
 .header-container{
  display: flex;
@@ -162,7 +165,6 @@ height: 80px;
 .hero {
     background-color: #2F303A;
     height: 600px;
-    width: 1600px;
 }   
 
 .hero-tittle {
@@ -240,18 +242,48 @@ color: var(--brand-color-text);
 
 /* about us img */
  
-.tittle-about-us-img{
+.about-us-img{
+    padding-bottom: 94px;
+}
+
+.images{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.images .index-img:not(last-child){
+    padding-right: 30px;
+}
+
+.img-tittles{
     font-weight: 700;
     font-size: 36px;
     line-height:1.67;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
 }
 
 /* team */
 
 .team{
     background-color: var(--brand-secondery-background);
+    height: 648px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-members{
+    display: flex;
+}
+.index-img{
+    text-align: center;
+}
+.personal-description{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .our-team{
@@ -284,12 +316,23 @@ color: var(--brand-color-text);
         line-height: 1.14;
  }
 
+.logo-link.bottom{
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.footer-nav{
+    margin-right: 0;
+
+    font-style : normal;
+}
+
  .sec-logo-footer{
-color: var(--main-white);
+    color: var(--main-white);
 }
 
  .address{
-   color: var(--main-white);
+    color: var(--main-white);
     font-size: 14px;
     line-height: 1.71;
  } 
@@ -328,19 +371,24 @@ color: var(--main-white);
     color: var(--brand-color-main);
     border-radius: 4px;
  }
+
  .portfolio-button:hover{
     background-color: var(--brand-color-focus);
     color: var(--main-white);
  }
+
  .portfolio-button:focus{
     background-color: var(--brand-color-focus);
-    color: var(--main-white);}
+    color: var(--main-white);
+}
+
     .portfolio-tittle{
             font-weight: 700;
             font-size: 18px;
             line-height: 2 ;
             letter-spacing: 0.06em;
     }
+
     .portfolio-paragraph{
         color: var(--brand-color-text);
             font-size: 16px;
