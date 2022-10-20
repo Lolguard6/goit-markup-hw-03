@@ -39,6 +39,7 @@ margin: auto ;
  display: flex;
 align-items: center;
 border-bottom: 1px solid #ececec;
+height: 80px;
 }
  .page-header{
  }
@@ -148,6 +149,14 @@ border-bottom: 1px solid #ececec;
 .header-info:hover{
     color: var(--brand-color-focus);
 }
+/* main */
+
+.section {
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+
 
 /* hero */
 .hero {
@@ -176,22 +185,40 @@ border-bottom: 1px solid #ececec;
 
 .button-hero{
 
-display: block;
-margin: 0 auto;
-    font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        background-color:var(--brand-color-focus);
-        color: var(--main-white);
-        border-radius: 4px;
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    width: 216px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: var(--brand-color-focus);
+    color: var(--main-white);
+    display: block;
+    margin: 0 auto;
 }
 
 /* about us */
+
+.about-us{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about-us-text{
+display: flex;
+}
+
+.about-us-text .about-us-blocks:not(:last-child) {
+    margin-right: 30px;
+}
+.about-us-blocks{
+    display: flexbox;
+}
 
 .sec-tittle {
         font-weight: 700;
@@ -199,6 +226,8 @@ margin: 0 auto;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        margin-bottom: 10px ;
 }
 
 .sec-paragraph {
