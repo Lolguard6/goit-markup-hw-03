@@ -31,7 +31,8 @@
      margin-left: auto;
      margin-right: auto;
      padding: 0 15px;
-    align-items: flex-start;
+     align-items: flex-start;
+     align-content: center;
  }
 
 
