@@ -363,24 +363,30 @@ color: var(--brand-color-text);
  /* portfolio */
 
  .portfolio-button{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        text-align: center;
-        letter-spacing: 0.03em;
-    background-color: var(--brand-secondery-background);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--brand-color-main);
+    border: transparent;
+    background: #F5F4FA;
+    padding: 6px 22px;  
     border-radius: 4px;
- }
-
+}
+`
  .portfolio-button:hover{
     background-color: var(--brand-color-focus);
     color: var(--main-white);
  }
 
  .portfolio-button:focus{
-    background-color: var(--brand-color-focus);
-    color: var(--main-white);
+    list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
 }
 
     .portfolio-tittle{
