@@ -45,7 +45,7 @@ align-items: center;
 border-bottom: 1px solid #ececec;
 height: 80px;
 }
- .page-header{
+    {
  }
 
 .main-nav{
@@ -375,7 +375,15 @@ color: var(--brand-color-text);
     padding: 6px 22px;  
     border-radius: 4px;
 }
-`
+
+.portfolio-buttons{
+    list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
+}
+
  .portfolio-button:hover{
     background-color: var(--brand-color-focus);
     color: var(--main-white);
